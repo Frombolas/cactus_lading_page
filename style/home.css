@@ -59,14 +59,28 @@ nav {
 }
 
 #cactus-apresentacao {
-    max-width: 80%; 
+    max-width: 60%; 
     height: auto; 
     margin-bottom: 80px; 
 }
 
 #apresentacao h2 {
     font-size: 2em;
-    font-weight: 100px; 
+    font-weight: bold; 
     color: #333; 
     margin: 0; 
+    margin-bottom: 10px; 
+}
+
+#apresentacao h3 {
+    font-size: 1.2em; 
+    margin-top: 5px;
+    margin-bottom: 0;
+    color: #333;
+    font-weight: normal;
+}
+
+.destaque {
+    color: #ef8732ef; 
+    font-weight: bold; 
 }
