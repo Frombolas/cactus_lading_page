@@ -59,30 +59,55 @@
     <section id="projetos">
       <h3>Nossos projetos</h3>
       
-      <div class="container-projetos"> <div class="projetosCards">
+      <div class="container-projetos"> 
+        <div class="projetosCards" 
+             onclick="openModal(
+                 '/imgs/exemploProj.png', 
+                 'Edifício Horizonte', 
+                 'Construção civil', 
+                 'Este projeto de construção civil é um marco na arquitetura moderna, focado em sustentabilidade e eficiência energética. Com 15 andares e design inovador.'
+             )">
           <img src="/imgs/exemploProj.png" alt="Exemplo de projeto">
           <span class="tipoProject">Construção civil</span>
           <p>Edifício Horizonte</p>
         </div>
-    
-        <div class="projetosCards">
+        
+        <div class="projetosCards" 
+             onclick="openModal(
+                 '/imgs/exemploProj.png', 
+                 'Loteamento Alvorada', 
+                 'Mapeamento', 
+                 'Realizamos o mapeamento topográfico completo deste terreno, definindo cotas, limites e viabilidade para futuros empreendimentos residenciais, utilizando drone e GPS de alta precisão.'
+             )">
           <img src="/imgs/exemploProj.png" alt="Exemplo de projeto">
           <span class="tipoProject">Mapeamento</span>
           <p>Loteamento Alvorada</p>
         </div>
 
-        <div class="projetosCards">
+        <div class="projetosCards" 
+             onclick="openModal(
+                 '/imgs/exemploProj.png', 
+                 'Reforma XYZ', 
+                 'Construção civil', 
+                 'Detalhes da reforma...'
+             )">
           <img src="/imgs/exemploProj.png" alt="Exemplo de projeto">
-          <span class="tipoProject">Mapeamento</span>
-          <p>Loteamento Alvorada</p>
+          <span class="tipoProject">Construção civil</span>
+          <p>Reforma XYZ</p>
+        </div>
+        
+        <div class="projetosCards" 
+             onclick="openModal(
+                 '/imgs/exemploProj.png', 
+                 'Orçamento Completo', 
+                 'Orçamentos', 
+                 'Detalhes do orçamento...'
+             )">
+          <img src="/imgs/exemploProj.png" alt="Exemplo de projeto">
+          <span class="tipoProject">Orçamentos</span>
+          <p>Orçamento Completo</p>
         </div>
 
-        <div class="projetosCards">
-          <img src="/imgs/exemploProj.png" alt="Exemplo de projeto">
-          <span class="tipoProject">Mapeamento</span>
-          <p>Loteamento Alvorada</p>
-        </div>
-    
       </div>
     </section>
     <section id="objetivos">
@@ -198,5 +223,17 @@
         </div>
       </div>
     </footer>
+    <div id="projectModal" class="modal">
+      <div class="modal-content">
+          <span class="close-button" onclick="closeModal()">&times;</span>
+          <img id="modal-img" src="" alt="Imagem do Projeto">
+          <div class="modal-body">
+              <span id="modal-specialty" class="tipoProject"></span>
+              <h3 id="modal-title"></h3>
+              <p id="modal-description"></p>
+          </div>
+      </div>
+  </div>
+    <script src="/scripts/script.js"></script>
   </body>
 </html>
