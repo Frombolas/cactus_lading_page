@@ -88,13 +88,14 @@ nav {
 .footer-bg {
   background-color: #ef8732ef;
   color: #1D1B20;
-  padding: 20px 0;
+  padding: 50px 0 30px; 
   font-family: Arial, sans-serif;
 }
 
 .footer-bg a {
   color: #1D1B20;
   text-decoration: none;
+  font-weight: 500;
 }
 
 .footer-bg a:hover {
@@ -102,18 +103,19 @@ nav {
 }
 
 .footer.container {
-  max-width: 1200px;
+  max-width: 1400px; 
   margin: 0 auto;
+  padding: 0 10%;
 }
 
 .footer-informacoes,
 .footer-contato {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 
 .footer-bg h3 {
-  margin-bottom: 10px;
-  font-size: 1rem;
+  margin-bottom: 16px;
+  font-size: 1.1rem;
   font-weight: 600;
 }
 
@@ -121,30 +123,38 @@ nav {
 .footer-contato ul {
   list-style: none;
   padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px; 
+}
+
+.footer-contato  {
+  padding-left: 100px;
 }
 
 .footer-informacoes li,
 .footer-contato li {
-  margin-bottom: 6px;
   display: flex;
-  align-items: center;
-  gap: 6px;
-  font-size: 0.9rem;
+  align-items: flex-start; 
+  gap: 8px;
+  font-size: 0.95rem;
+  line-height: 1.4;
 }
 
 .footer-contato img,
 .footer-bottom img {
   width: 20px;
   height: 20px;
+  flex-shrink: 0;
 }
 
 .footer-bottom .logo {
-  width: 35px;
+  width: 40px;
   height: auto;
 }
 
 .footer-bg hr {
-  margin: 15px 0;
+  margin: 30px 0;
   border: none;
   border-top: 1px solid rgba(29, 27, 32, 0.3);
 }
@@ -154,8 +164,8 @@ nav {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 16px;
-  font-size: 0.85rem;
+  gap: 20px;
+  font-size: 0.9rem;
 }
 
 
@@ -230,9 +240,10 @@ nav {
 
 .container-projetos {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   gap: 30px;
-  flex-wrap: wrap;
+  flex-wrap: wrap; 
 }
 
 .projetosCards {
