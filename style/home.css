@@ -1,6 +1,14 @@
+@font-face {
+  font-family: 'ErasBold';
+  src: url('/fonts/ERASBD.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
     margin: 0;
     padding: 0;
+    font-family: 'ErasBold', Arial, sans-serif;
 }
 header {
     width: 100%;
@@ -89,7 +97,6 @@ nav {
   background-color: #ef8732ef;
   color: #1D1B20;
   padding: 50px 0 30px; 
-  font-family: Arial, sans-serif;
 }
 
 .footer-bg a {
