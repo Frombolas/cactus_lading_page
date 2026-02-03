@@ -261,6 +261,7 @@ nav {
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
   text-align: left; 
   transition: 0.3s;
+  cursor: pointer; 
 }
 
 .projetosCards:hover {
@@ -446,12 +447,12 @@ nav {
   flex-direction: column;
 }
 
+/* MODIFICADO: Removemos o border-radius daqui, agora fica no .carousel-container */
 #modal-img {
   width: 100%;
   max-height: 400px;
   object-fit: cover;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  display: block;
 }
 
 .modal-body {
@@ -479,6 +480,7 @@ nav {
   color: #555;
 }
 
+/* MODIFICADO: Adicionado z-index e melhorada a sombra */
 .close-button {
   color: #fff;
   font-size: 35px;
@@ -488,14 +490,64 @@ nav {
   right: 20px;
   transition: 0.3s;
   cursor: pointer;
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+  z-index: 20; /* Fica acima de tudo */
 }
 
 .close-button:hover,
 .close-button:focus {
-  color: #bbb;
+  color: #ef8732; 
   text-decoration: none;
   cursor: pointer;
+}
+
+.carousel-container {
+  position: relative;
+  width: 100%;
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 10px; 
+  border-top-right-radius: 10px;
+  overflow: hidden;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 15px 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.carousel-btn:hover {
+  background-color: rgba(239, 135, 50, 0.9); /* Laranja do tema */
+  color: #fff;
+}
+
+.prev {
+  left: 0;
+  border-radius: 0 5px 5px 0;
+}
+
+.next {
+  right: 0;
+  border-radius: 5px 0 0 5px;
+}
+
+/* Responsividade para celular */
+@media (max-width: 600px) {
+  .carousel-btn {
+    padding: 10px 8px;
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 768px) {

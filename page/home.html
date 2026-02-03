@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/style/home.css" />
+    <link rel="shortcut icon" href="/imgs/CactusApresentacao.png" type="image/x-icon">
     <title>Cactus</title>
   </head>
   <body>
@@ -21,6 +22,7 @@
         </nav>
       </div>
     </header>
+
     <section id="apresentacao">
       <div class="cactus-logo-body">
         <img
@@ -29,76 +31,78 @@
           id="cactus-apresentacao"
         />
       </div>
-      <h2>JUNTOS CRESCEMOS E AVANÇAMOS AO FUTURO</h2>
+      <h2>Construindo com a terra, crescendo com a comunidade</h2>
       <h3>
-        <span class="destaque">Transformando</span> ideias em
-        <span class="destaque">realidade</span>, um projeto de cada vez
+        <span class="destaque">Apoiamos</span> comunidades do Alto Sertão Paraibano com  
+        <span class="destaque">assistência técnica</span>, em bioconstrução, agroecologia e economia solidária.
       </h3>
     </section>
+
     <section id="conteudoInit">
         <h3> O que fazemos? </h3>
         <p>Conheça as nossas áreas de atuação e especialidades</p>
         <div id="especialidades">
           <div class="especialidade">
             <img src="/imgs/arvoresIcon.png" alt="icone de arvores">
-            <span class="tituloCard">Soluções Ambientais Sustentáveis
-            </span>
-            <p>Projetos voltados à preservação ambiental, uso consciente dos recursos naturais e desenvolvimento sustentável, integrando conhecimento técnico e saberes da comunidade.</p>
+            <span class="tituloCard"> Agroecologia </span>
+            <p>Planejamento de espaços produtivos com base na permacultura, promovendo diversidade, cuidado com a água e regeneração do solo.</p>
           </div>
           <div class="especialidade">
             <img src="/imgs/infraIcon.png" alt="icone de pilha de Infraestrutura">
-            <span class="tituloCard">Edificações e Infraestrutura</span>
-            <p>Desenvolvimento de estudos, projetos e assessorias técnicas na área de edificações, promovendo soluções seguras, eficientes e adequadas às necessidades locais.</p>
+            <span class="tituloCard">Bioconstrução</span>
+            <p>Assistência técnica para famílias urbanas e rurais de baixa renda construírem ou reformarem moradias dignas, confortáveis e adaptadas ao clima local.</p>
           </div>
           <div class="especialidade">
             <img src="/imgs/inovacaoIcon.png" alt="icone de inovação">
-            <span class="tituloCard">Tecnologia e Inovação Aplicada</span>
-            <p>Criação de soluções tecnológicas nas áreas de informática, elétrica e automação, com foco em inovação, impacto social e apoio ao desenvolvimento regional.</p>
+            <span class="tituloCard">Economia Solidária</span>
+            <p>Apoio a grupos e comunidades na organização de arranjos produtivos locais, fortalecendo cooperação, geração de renda e autonomia coletiva.</p>
           </div>
         </div>
     </section>
+
     <section id="projetos">
       <h3>Nossos projetos</h3>
       <div class="container-projetos">
         
         <div class="projetosCards" 
              onclick="openModal(
-                 '/imgs/exemploProj.png', 
-                 'Assentamento Valdecir Santiago/PB', 
-                 'Edificações e Infraestrutura', 
+                 ['/imgs/projetos/modeloATHIS4.png', '/imgs/projetos/modeloATHIS1.png','/imgs/projetos/modeloATHIS2.png','/imgs/projetos/modeloATHIS3.png' ], 
+                 'Escritório modelo ATHIS e Canteiro Escola', 
+                 'Bioconstrução', 
                  '.'
              )">
-          <img src="/imgs/exemploProj.png" alt="Exemplo de projeto">
-          <span class="tipoProject">Edificações e Infraestrutura</span>
-          <p>Casa Seu Titico</p>
+          <img src="/imgs/projetos/modeloATHIS4.png" alt="Exemplo de projeto">
+          <span class="tipoProject">Bioconstrução</span>
+          <p>Escritório modelo ATHIS e Canteiro Escola</p>
         </div>
 
         <div class="projetosCards" 
              onclick="openModal(
-                 '/imgs/exemploProj.png', 
-                 'Casa de sementes Seu Sales', 
-                 'Edificações e Infraestrutura', 
+                 ['/imgs/projetos/CSA1.png','/imgs/projetos/CSA2.png','/imgs/projetos/CSA3.png','/imgs/projetos/CSA4.png'], 
+                 'Comunidade que sustenta agricultura - CSA Cajazeiras', 
+                 'Agroecologia', 
                  '.'
              )">
-          <img src="/imgs/exemploProj.png" alt="Exemplo de projeto">
-          <span class="tipoProject">Edificações e Infraestrutura</span>
-          <p>Casa de sementes Seu Sales</p>
+          <img src="/imgs/projetos/CSA4.png" alt="Exemplo de projeto">
+          <span class="tipoProject">Agroecologia</span>
+          <p>Comunidade que sustenta agricultura - CSA Cajazeiras</p>
         </div>
         
         <div class="projetosCards" 
              onclick="openModal(
-                 '/imgs/exemploProj.png', 
-                 'Cozinha comunitária', 
-                 'Soluções Ambientais Sustentáveis', 
+                 ['/imgs/projetos/plastico1.png','/imgs/projetos/plastico2.png','/imgs/projetos/plastico3.png','/imgs/projetos/plastico4.png'], 
+                 'Economia comunitária', 
+                 'Plastico Precioso Cajazeiras', 
                  '.'
              )">
-          <img src="/imgs/exemploProj.png" alt="Exemplo de projeto">
-          <span class="tipoProject">Soluções Ambientais Sustentáveis</span>
-          <p>Cozinha comunitária</p>
+          <img src="/imgs/projetos/plastico2.png" alt="Exemplo de projeto">
+          <span class="tipoProject">Economia comunitária</span>
+          <p>Plastico Precioso Cajazeiras</p>
         </div>
 
       </div>
     </section>
+
     <section id="objetivos">
       <h3>Objetivos do Cactus</h3>
       <p class="subtitulo">Esses são alguns dos principais objetivos do Cactus</p>
@@ -126,11 +130,12 @@
 
       </div>
     </section>
+
     <section id="contato">
       <h3>Entre em Contato</h3>
       <p>Preencha o formulário abaixo e entraremos em contato o mais breve possível.</p>
       
-      <form action="mailto:loopisjr@gmail.com" method="post" enctype="text/plain" id="form-contato">
+      <form action="cactus.cz@ifpb.edu.br" method="post" enctype="text/plain" id="form-contato">
           <div class="campo">
               <label for="nome">Nome Completo</label>
               <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
@@ -150,7 +155,8 @@
               <button type="submit" class="btn-enviar">Enviar Mensagem</button>
           </div>
       </form>
-  </section>
+    </section>
+
     <footer class="footer-bg">
       <div class="footer container">
         <div class="footer-informacoes">
@@ -215,17 +221,25 @@
         </div>
       </div>
     </footer>
+
     <div id="projectModal" class="modal">
       <div class="modal-content">
           <span class="close-button" onclick="closeModal()">&times;</span>
-          <img id="modal-img" src="" alt="Imagem do Projeto">
+          
+          <div class="carousel-container">
+              <button class="carousel-btn prev" onclick="mudarImagem(-1)">&#10094;</button>
+              <img id="modal-img" src="" alt="Imagem do Projeto">
+              <button class="carousel-btn next" onclick="mudarImagem(1)">&#10095;</button>
+          </div>
+    
           <div class="modal-body">
               <span id="modal-specialty" class="tipoProject"></span>
               <h3 id="modal-title"></h3>
               <p id="modal-description"></p>
           </div>
       </div>
-  </div>
+    </div>
+
     <script src="/scripts/script.js"></script>
   </body>
 </html>
