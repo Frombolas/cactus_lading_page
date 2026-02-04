@@ -6,176 +6,95 @@
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'ErasBold', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'ErasBold', Arial, sans-serif;
 }
-header {
-    width: 100%;
-    background-color: #ef8732ef;
 
+/* --- HEADER & NAV --- */
+header {
+  width: 100%;
+  background-color: #ef8732ef;
 }
 
 .nav-bar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px 10%; 
-
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 10%;
 }
 
 nav {
-    flex-grow: 0;
+  flex-grow: 0;
 }
 
 #lista-nav {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
 }
 
 #lista-nav a {
-    text-decoration: none;
-    font: bold;
-    font-size: large;
-    color: black; 
+  text-decoration: none;
+  font-weight: bold;
+  font-size: large;
+  color: black;
 }
 
 #lista-nav a:hover {
-    color: #fffffff4; 
-    transition: color 0.5s ease; 
+  color: #fffffff4;
+  transition: color 0.5s ease;
 }
 
 #lista-nav li {
-    margin-left: 30px;
+  margin-left: 30px;
 }
 
 #logo-img {
-    height: 52px; 
-    width: 52px; 
-    display: block; 
+  height: 52px;
+  width: 52px;
+  display: block;
 }
 
+/* --- APRESENTAÇÃO --- */
 #apresentacao {
-    display: flex; 
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: center; 
-    text-align: center; 
-    padding: 50px 0; 
-    width: 100%; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 50px 0;
+  width: 100%;
 }
 
 #cactus-apresentacao {
-    max-width: 60%; 
-    height: auto; 
-    margin-bottom: 80px; 
+  max-width: 60%;
+  height: auto;
+  margin-bottom: 80px;
 }
 
 #apresentacao h2 {
-    font-size: 2em;
-    font-weight: bold; 
-    color: #333; 
-    margin: 0; 
-    margin-bottom: 10px; 
+  font-size: 2em;
+  font-weight: bold;
+  color: #333;
+  margin: 0;
+  margin-bottom: 10px;
 }
 
 #apresentacao h3 {
-    font-size: 1.2em; 
-    margin-top: 5px;
-    margin-bottom: 0;
-    color: #333;
-    font-weight: normal;
+  font-size: 1.2em;
+  margin-top: 5px;
+  margin-bottom: 0;
+  color: #333;
+  font-weight: normal;
 }
 
 .destaque {
-    color: #ef8732ef; 
-    font-weight: bold; 
+  color: #ef8732ef;
+  font-weight: bold;
 }
 
-.footer-bg {
-  background-color: #ef8732ef;
-  color: #1D1B20;
-  padding: 50px 0 30px; 
-}
-
-.footer-bg a {
-  color: #1D1B20;
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.footer-bg a:hover {
-  text-decoration: underline;
-}
-
-.footer.container {
-  max-width: 1400px; 
-  margin: 0 auto;
-  padding: 0 10%;
-}
-
-.footer-informacoes,
-.footer-contato {
-  margin-bottom: 30px;
-}
-
-.footer-bg h3 {
-  margin-bottom: 16px;
-  font-size: 1.1rem;
-  font-weight: 600;
-}
-
-.footer-informacoes ul,
-.footer-contato ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  flex-direction: column;
-  gap: 10px; 
-}
-
-.footer-contato  {
-  padding-left: 100px;
-}
-
-.footer-informacoes li,
-.footer-contato li {
-  display: flex;
-  align-items: flex-start; 
-  gap: 8px;
-  font-size: 0.95rem;
-  line-height: 1.4;
-}
-
-.footer-contato img,
-.footer-bottom img {
-  width: 20px;
-  height: 20px;
-  flex-shrink: 0;
-}
-
-.footer-bottom .logo {
-  width: 40px;
-  height: auto;
-}
-
-.footer-bg hr {
-  margin: 30px 0;
-  border: none;
-  border-top: 1px solid rgba(29, 27, 32, 0.3);
-}
-
-.footer-bottom {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 20px;
-  font-size: 0.9rem;
-}
-
-
+/* --- CONTEÚDO INICIAL (Sobre Nós) --- */
 #conteudoInit {
   padding: 25px 10%;
   text-align: center;
@@ -196,18 +115,17 @@ nav {
 #especialidades {
   display: flex;
   justify-content: center;
-  gap: 20px; 
-  flex-wrap: wrap;
   gap: 30px;
+  flex-wrap: wrap;
 }
 
 .especialidade {
   background-color: #f8decb86;
   border: 1px solid #ddd;
-  border-radius: 4px; 
+  border-radius: 4px;
   padding: 30px 20px;
-  width: 240px; 
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05); 
+  width: 240px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
@@ -223,7 +141,7 @@ nav {
 .especialidade .tituloCard {
   font-weight: bold;
   font-size: 1.2rem;
-  color: #ef8732ef; 
+  color: #ef8732ef;
   margin-bottom: 15px;
   display: block;
 }
@@ -232,9 +150,10 @@ nav {
   font-size: 0.95rem;
   line-height: 1.5;
   color: #555;
-  margin-bottom: 0; 
+  margin-bottom: 0;
 }
 
+/* --- PROJETOS --- */
 #projetos {
   padding: 60px 10%;
   text-align: center;
@@ -250,18 +169,18 @@ nav {
   flex-direction: row;
   justify-content: center;
   gap: 30px;
-  flex-wrap: wrap; 
+  flex-wrap: wrap;
 }
 
 .projetosCards {
   background-color: #fff;
-  width: 260px; 
+  width: 260px;
   border-radius: 12px;
-  overflow: hidden; 
+  overflow: hidden;
   box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  text-align: left; 
+  text-align: left;
   transition: 0.3s;
-  cursor: pointer; 
+  cursor: pointer;
 }
 
 .projetosCards:hover {
@@ -270,8 +189,8 @@ nav {
 
 .projetosCards img {
   width: 100%;
-  height: 150px; 
-  object-fit: cover; 
+  height: 150px;
+  object-fit: cover;
 }
 
 .tipoProject {
@@ -289,6 +208,64 @@ nav {
   color: #333;
   margin: 0 15px 20px 15px;
 }
+
+/* --- OBJETIVOS --- */
+#objetivos {
+  padding: 60px 10%;
+  text-align: center;
+  background-color: #ef8732ef;
+}
+
+#objetivos h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+#objetivos .subtitulo {
+  color: #000000df;
+  margin-bottom: 50px;
+}
+
+.objetivos-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.objetivos-itens {
+  flex: 1;
+  min-width: 250px;
+  max-width: 350px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.objetivos-itens:not(:last-child):after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 20%;
+  height: 60%;
+  width: 1px;
+  background-color: #5569ffef;
+}
+
+.objetivo-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.objetivos-itens p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
 
 #contato {
   padding: 30px 10%;
@@ -322,22 +299,22 @@ nav {
   color: #333;
 }
 
-.campo input, 
+.campo input,
 .campo textarea {
   width: 100%;
   padding: 12px;
   border: 2px solid #0037ffda;
   border-radius: 6px;
   font-size: 1rem;
-  box-sizing: border-box; 
+  box-sizing: border-box;
   font-family: inherit;
 }
 
 .campo textarea {
-  resize: vertical; 
+  resize: vertical;
 }
 
-.campo input:focus, 
+.campo input:focus,
 .campo textarea:focus {
   outline: none;
   border-color: #ef8732ef;
@@ -367,92 +344,173 @@ nav {
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
 }
 
-#objetivos {
-  padding: 60px 10%;
-  text-align: center;
+/* --- FOOTER (Geral) --- */
+.footer-bg {
   background-color: #ef8732ef;
+  color: #1D1B20;
+  padding: 50px 0 30px;
 }
 
-#objetivos h3 {
-  font-size: 2rem;
-  margin-bottom: 10px;
+.footer-bg a {
+  color: #1D1B20;
+  text-decoration: none;
+  font-weight: 500;
 }
 
-#objetivos .subtitulo {
-  color: #000000df;
-  margin-bottom: 50px;
+.footer-bg a:hover {
+  text-decoration: underline;
 }
 
-.objetivos-container {
+.footer.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 10%;
+}
+
+.footer-informacoes,
+.footer-contato {
+  margin-bottom: 30px;
+}
+
+.footer-bg h3 {
+  margin-bottom: 16px;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.lista-equipe {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.membro-item {
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 10px;
+}
+
+.membro-item:last-child {
+  border-bottom: none;
+}
+
+.topo-membro {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-wrap: wrap; 
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
 }
 
-.objetivos-itens {
-  flex: 1; 
-  min-width: 250px;
-  max-width: 350px;
-  padding: 20px;
+.cargo {
+  font-weight: bold;
+  font-size: 0.9rem;
+  color: #000;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+.nome-membro {
+  display: block;
+  font-size: 1rem;
+  color: #1D1B20; 
+  line-height: 1.4;
+  font-weight: bold;
+}
+
+.link-lattes {
+  font-size: 0.8rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 2px 8px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #000;
+  transition: 0.3s;
+}
+
+.link-lattes:hover {
+  background-color: #fff;
+  color: #ef8732;
+  text-decoration: none;
+}
+
+.footer-informacoes ul:not(.lista-equipe), 
+.footer-contato ul {
+  list-style: none;
+  padding: 0;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  position: relative; 
+  gap: 10px;
 }
 
-.objetivos-itens:not(:last-child):after {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 20%;
-  height: 60%; 
-  width: 1px;
-  background-color: #5569ffef;
+.footer-contato {
+  padding-left: 0; 
 }
 
-.objetivo-icon {
-  width: 50px;
-  height: 50px;
-  margin-bottom: 20px;
+@media (min-width: 700px) {
+    .footer-contato {
+        padding-left: 50px;
+    }
 }
 
-.objetivos-itens p {
+.footer-informacoes li,
+.footer-contato li {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
   font-size: 0.95rem;
-  line-height: 1.6;
-  color: #ffffff;
+  line-height: 1.4;
 }
 
+.footer-contato img,
+.footer-bottom img {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+}
+
+.footer-bottom .logo {
+  width: 40px;
+  height: auto;
+}
+
+.footer-bg hr {
+  margin: 30px 0;
+  border: none;
+  border-top: 1px solid rgba(29, 27, 32, 0.3);
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  font-size: 0.9rem;
+}
+
+/* --- MODAL E CARROSSEL --- */
 .modal {
   display: none;
-  position: fixed; 
+  position: fixed;
   z-index: 1000;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
-  overflow: auto; 
-  background-color: rgba(0,0,0,0.8); 
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
   padding-top: 50px;
 }
 
 .modal-content {
   background-color: #fefefe;
-  margin: 5% auto; 
+  margin: 5% auto;
   max-width: 700px;
   border-radius: 10px;
   position: relative;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.5);
-  display: flex; 
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  display: flex;
   flex-direction: column;
-}
-
-/* MODIFICADO: Removemos o border-radius daqui, agora fica no .carousel-container */
-#modal-img {
-  width: 100%;
-  max-height: 400px;
-  object-fit: cover;
-  display: block;
 }
 
 .modal-body {
@@ -480,7 +538,6 @@ nav {
   color: #555;
 }
 
-/* MODIFICADO: Adicionado z-index e melhorada a sombra */
 .close-button {
   color: #fff;
   font-size: 35px;
@@ -490,13 +547,13 @@ nav {
   right: 20px;
   transition: 0.3s;
   cursor: pointer;
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
-  z-index: 20; /* Fica acima de tudo */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
+  z-index: 20;
 }
 
 .close-button:hover,
 .close-button:focus {
-  color: #ef8732; 
+  color: #ef8732;
   text-decoration: none;
   cursor: pointer;
 }
@@ -508,9 +565,16 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top-left-radius: 10px; 
+  border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   overflow: hidden;
+}
+
+#modal-img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  display: block;
 }
 
 .carousel-btn {
@@ -528,7 +592,7 @@ nav {
 }
 
 .carousel-btn:hover {
-  background-color: rgba(239, 135, 50, 0.9); /* Laranja do tema */
+  background-color: rgba(239, 135, 50, 0.9);
   color: #fff;
 }
 
@@ -542,7 +606,7 @@ nav {
   border-radius: 5px 0 0 5px;
 }
 
-/* Responsividade para celular */
+
 @media (max-width: 600px) {
   .carousel-btn {
     padding: 10px 8px;
@@ -552,10 +616,10 @@ nav {
 
 @media (max-width: 768px) {
   .objetivos-itens:after {
-      display: none;
+    display: none;
   }
   .objetivos-itens {
-      border-bottom: 1px solid #eee;
+    border-bottom: 1px solid #eee;
   }
 }
 
@@ -571,10 +635,6 @@ nav {
   }
 
   .footer-bottom {
-    grid-column: 1 / -1;
-  }
-
-  .footer-copy {
     grid-column: 1 / -1;
   }
 }
