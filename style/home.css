@@ -385,9 +385,10 @@ nav {
 }
 
 .membro-item {
-  margin-bottom: 20px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-  padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+  gap: 6px;
 }
 
 .membro-item:last-child {
@@ -398,7 +399,6 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 5px;
 }
 
 .cargo {
@@ -406,14 +406,11 @@ nav {
   font-size: 0.9rem;
   color: #000;
   text-transform: uppercase;
-  opacity: 0.8;
 }
 
 .nome-membro {
   display: block;
-  font-size: 1rem;
-  color: #1D1B20; 
-  line-height: 1.4;
+  margin-bottom: 2px;
   font-weight: bold;
 }
 
